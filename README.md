@@ -12,5 +12,3 @@ Steps to use it:
 - change the name of the text file in the python script, as well as the island size (currently 15360 for tanoa)
 - run the script (i.e.: python topng.py). Python must be installed, along with the pillow library for it
 - that should create the png. stuff like water level and scaling can be set in the python script.
-
-(Beowulf Strategic Operations)[https://beowulfso.com]
