@@ -1,10 +1,9 @@
 from PIL import Image, ImageDraw
 import math
 
-filename = "133682323533037935"
 num_lines = 0
 ### Get the line count first, I guess
-with open(filename + ".txt", "rb") as f:
+with open("todo.txt", "rb") as f:
     num_lines = sum(1 for _ in f)
 
 print(num_lines)
@@ -21,7 +20,7 @@ worldsize = math.sqrt(num_lines)
 ### We'll just read the file AGAIN and only go for z values and find the min max.
 z_min = 0.0
 z_max = 0.0
-f = open(filename + ".txt")
+f = open("todo.txt")
 i=0
 j=0
 while True:
@@ -50,7 +49,7 @@ while True:
 
 img = Image.new('I', (int(worldsize), int(worldsize))) 
 draw = ImageDraw.Draw(img)
-f = open(filename + ".txt")
+f = open("todo.txt")
 i=0
 j=0
 while True:
@@ -78,4 +77,4 @@ while True:
         print(j)
 
 print("saving..")
-img.save(filename + ".png")
+img.save("done.png")
