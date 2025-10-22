@@ -4,7 +4,7 @@ Just a quick and dirty height data grabber. Exports it to 16bit greyscale png. 1
 "How hard can it be.."
 
 Steps to use it:
-- Compile the dll, e.g. by using Visual Studio
+- Compile the dll, e.g. by using Visual Studio (or download it from release [here](https://github.com/Keithenneu/Beowulf.ArmaTerrainExport/releases/download/0/bate_x64.dll))
 - Copy the dll to the Arma directory, dll name should be "bate.dll" or "bate_x64.dll"
 - Create the folder C:/arma3/terrain/ (can be changed in AddIn.cs, before building the dll)
 - Start a mission on the terrain you want. Either copy the sqf file into the mission folder and execVm it, or just spawn the code from the debug console (`[] spawn {paste the code here}`)
